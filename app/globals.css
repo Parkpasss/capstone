@@ -523,3 +523,12 @@ p img {
   background-color: #194ec2;
   color: white;
 }
+
+.selh1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.now {
+  opacity: 0.4;
+}

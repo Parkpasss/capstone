@@ -103,6 +103,9 @@ const Laptop = () => {
 
   return (
     <div>
+      <div class="selh1">
+        <h1>노트북 충전기를 선택해주세요.</h1>
+      </div>
       {generateTable()}
       <p class="bot">총 수량: {calcSum()}</p>
       <button id="rentbtn" onClick={eodu}>
