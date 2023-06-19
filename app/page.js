@@ -13,7 +13,7 @@ const Home = () => {
       <main className="container mx-auto p-4">
         <section>
           <div>
-            <img src="main.jpg"></img>
+            <img src="main.jpg" alt="노트북" style={{ height: '600px' }}></img>
           </div>
 
           <div className="container">
