@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import classes from './realreturn.module.css'
 
 const Page = () => {
@@ -32,29 +32,41 @@ const Page = () => {
     countdown('countdown', 300)
   }, [])
 
+  const [activeButton, setActiveButton] = useState(null)
+
+  const handleButtonClick = (buttonId) => {
+    setActiveButton(buttonId)
+  }
+
   const qksskq = () => {
     alert('해당 위치로 반납 부탁드립니다~!~!')
   }
 
   return (
-    <div className="container mt-5 text-center">
-      <main role="main" className="inner-cover">
-        <h2 className="cover-heading">반납하시겠습니까?</h2>
+    <div className="container mt-6 text-center">
+      <main role="main" class="inner-cover que">
+        <h2>반납하시겠습니까?</h2>
         <br />
-        <p className="lead" id="countdown">
-          남은 대여 시간 :
-        </p>
-        <p className="lead">반납 위치 설정 :</p>
-        <div className={classes.button}>
-          <button className="btn mr-1 btn-outline-danger">인농관</button>
-          <button className="btn ml-1 btn-outline-danger">세종관</button>
+        <p id="countdown">남은 대여 시간 : </p>
+        <p class="setloc">반납 위치 설정 : </p>
+        <div class="locbtn">
+          <button
+            className={`btn mr-1 ${activeButton === '인농관' ? 'active' : ''}`}
+            onClick={() => handleButtonClick('인농관')}
+          >
+            인농관
+          </button>
+          <button
+            className={`btn ml-1 ${activeButton === '세종관' ? 'active' : ''}`}
+            onClick={() => handleButtonClick('세종관')}
+          >
+            세종관
+          </button>
         </div>
-
-        <p className="lead">
-          <a className="btn btn-lg btn-secondary focus" onClick={qksskq}>
-            반납하기
-          </a>
-        </p>
+        <br></br>
+        <a class="returnbtn" onClick={qksskq}>
+          반납하기
+        </a>{' '}
       </main>
     </div>
   )

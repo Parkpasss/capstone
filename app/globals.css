@@ -106,6 +106,7 @@ header {
 
 body {
   background-color: rgb(226, 235, 253);
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 .lead {
@@ -331,7 +332,9 @@ a:hover {
 
 .btn-me:hover {
   border: 2px solid #08298a;
-  color: #08298a;
+  background-color: #08298a;
+  color: white;
+  transition: all linear 0.3s;
 }
 
 .card-header {
@@ -361,4 +364,159 @@ a:hover {
 .returnq h2 {
   font-size: 35px;
   margin-bottom: 20px;
+}
+
+table,
+tr {
+  border: 1px solid black;
+  text-align: center;
+}
+
+table {
+  margin: 90px auto;
+  width: 70%;
+}
+
+td {
+  height: 70px;
+}
+
+thead {
+  background-color: #7e90b8;
+  font-size: 30px;
+}
+
+tbody td {
+  font-size: 24px;
+}
+
+.plusbtn {
+  background-color: #2a63df;
+  color: white;
+  width: 40px;
+  height: 40px;
+  padding: 0px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.delbtn {
+  background-color: #778bab;
+  color: white;
+  width: 60px;
+  height: 40px;
+  padding: 0px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.plusbtn:hover {
+  background-color: #163c8c;
+  transition: all linear 0.3s;
+}
+
+.delbtn:hover {
+  background-color: #42546f;
+  transition: all linear 0.3s;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #d0daf0;
+}
+
+.bot {
+  text-align: center;
+  margin-left: 45%;
+  margin-right: 5px;
+  font-size: 40px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#rentbtn {
+  background-color: #7b8fbb;
+  width: 90px;
+  height: 40px;
+  color: white;
+  border-radius: 10px;
+  position: absolute;
+  right: 310px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#rentbtn:hover {
+  background-color: #536ca1;
+  transition: all linear 0.3s;
+}
+
+.jpgs {
+  display: flex;
+  justify-content: center;
+}
+
+.imgs {
+  display: flex;
+}
+
+p img {
+  margin: 0px auto;
+}
+
+.imgs img {
+  width: 280px;
+  height: 170px;
+}
+
+.que {
+  padding-top: 50px;
+  font-size: 23px;
+}
+
+.que h2 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.setloc {
+  display: inline-block;
+}
+
+.locbtn {
+  display: inline-block;
+}
+
+.locbtn button {
+  display: inline-block;
+  margin: 0px 10px;
+  padding: 4px 6px;
+  border: 1px solid #5479c9;
+  border-radius: 10px;
+}
+
+.returnbtn {
+  margin-top: 20px;
+  background-color: #a9bce9;
+  width: 150px;
+  height: 45px;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 30px;
+}
+
+.returnbtn:hover {
+  background-color: #6885c9;
+}
+
+.locbtn button:hover {
+  background-color: #194ec2;
+  color: white;
+  transition: all linear 0.2s;
+}
+
+.btn.active {
+  background-color: #194ec2;
+  color: white;
 }
