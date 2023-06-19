@@ -32,7 +32,7 @@ const Location = () => {
       </div>
       <div>
         <img src={currentImg} alt="현재 이미지" className="fade-in"></img>
-      </div>
+      </div>{' '}
     </div>
   )
 }
